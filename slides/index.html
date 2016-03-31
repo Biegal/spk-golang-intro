@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Go Intro - Marcin Biegała</title>
+
+    <meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+    <meta name="author" content="Hakim El Hattab">
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/white.css" id="theme">
+
+    <!-- Code syntax highlighting -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+
+    <!-- Printing and PDF exports -->
+    <script>
+        var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
+
+    <!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+
+    <style>
+        .reveal section.intro img {
+            border: 0px;
+            box-shadow: 0 0 0px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="reveal">
+
+        <!-- Any section element inside of this container is displayed as a slide -->
+        <div class="slides">
+            <section>
+                <h1>GoLang</h1>
+                <h3>Dla początkujących</h3>
+                <p>
+                    <small>Marcin Biegała</small>
+                </p>
+            </section>
+            
+            <section>
+                <h1>Lekcja 1</h1>
+                <p class="fragment">
+                    Nigdy nie planuj, że zrobisz coś w długi/świąteczny weekend.<br/>
+                    Od razu jesteś skazany na porażkę :)
+                </p>
+            </section>
+
+            <section class="intro">
+                <h2>Co porabiam ?</h2>
+                <table>
+                    <tr>
+                        <td>
+                            <div style='width: 300px; height: 150px; text-align:center'><img src='img/htlogo.png'></img>
+                            </div>
+                            <div style="margin:15px; text-align:center"><small>www.happyteam.io</small></div>
+                        </td>
+                        <td>
+                            <div style='width: 300px; height: 150px; text-align:center'><img src='img/stlogo.jpg'></img>
+                            </div>
+                            <div style="margin:15px; text-align:center"><small>www.skillstemple.com</small></div>
+                        </td>
+                    </tr>
+                </table>
+            </section>
+
+            <section>
+                <h2>Gdzie można mnie znaleźć ?</h2>
+                <ul>
+                    <li>marcin@biegala.net</li>
+                    <li>@Biegal</li>
+                    <li>http://blog.biegala.net</li>
+                    <li>https://github.com/Biegal/spk-golang-intro</li>
+                </ul>
+            </section>
+
+            <section>
+                <section>
+                    <h2>Ekspert</h2>
+                    <blockquote class="fragment fade-in">
+                        Ekspert to taki człowiek, który popełnił wszystkie możliwe błędy w bardzo wąskiej dziedzinie.
+                        <br/>
+                        <div style="font-style:italic; text-align:right">Niels Bohr</div>
+                    </blockquote>
+                </section>
+
+                <section>
+                    <img src='img/beginnerimg.png'></img>
+                </section>
+            </section>
+
+            <section>
+                <section>
+                    <h2>A jak trafiłem na GO ?</h2>
+                    <p class="fragment">Najpierw był C#</p>
+                    <ul class="fragment">
+                        <li>Thread, ThreadPool, Task, async/await ?</li>
+                        <li>Asp .vnext, core, 5 ?</li>
+                        <li>WebRequest, WebClient, HttpClient</li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>A jak trafiłem na GO ?</h2>
+                    <p class="fragment">Potem padło na JavaScript</p>
+                    <p class="fragment">Spuśćmy na to zasłonę milczenia</p>
+                </section>
+            </section>
+
+            <section>
+                <section>
+                    <h2>GO | GoLang</h2>
+                    <ul>
+                        <li>Powstał w Google</li>
+                        <li>2007/2009 - ver 1.0 w 2012</li>
+                        <li>Robert Griesemer, Rob Pike, Ken Thompson</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Charakterystyka</h2>
+                    <ul>
+                        <li class="fragment">Open source</li>
+                        <li class="fragment">Kompilowany, C-pochodny</li>
+                        <li class="fragment">Statycznie typowany</li>
+                        <li class="fragment">Garbage Collection</li>
+                        <li class="fragment">Nie obiektowy, choć pozwala tak pisać</li>
+                        <li class="fragment">Linux, Unix, OSX, FreeBSD, Windows, Android, iOS</li>
+                    </ul>
+                </section>
+            </section>
+
+            <section>
+                <section>
+                    <h2>Ale po co ?</h2>
+                    <img src="img/krzywda1.jpg"></img>
+                </section>
+                <section>
+                    <h2>Ale po co ?</h2>
+                    <img src="img/krzywda2.jpg"></img>
+                </section>
+
+                <section>
+                    <h2>Ale po co ?</h2>
+                    <ul>
+                        <li class="fragment">Google i problem wielu platform/języków</li>
+                        <li class="fragment">Static vs dynamic typing</li>
+                        <li class="fragment">Zaprojektowany z myślą o nowoczesnych procesorach</li>
+                        <li class="fragment">Łatwiejszy od C++</li>
+                        <li class="fragment">Ale równie szybki</li>
+                        <li class="fragment">Bo programowanie to sport zespołowy</li>
+                    </ul>
+                </section>
+            </section>
+
+            <section>
+                <h2>Zmiany zmiany ?</h2>
+                <img src="img/versiongraph.jpg"></img>
+            </section>
+
+            <section>
+                <h2>Kto uzywa ?</h2>
+                <ul>
+                    <li class="fragment">Docker</li>
+                    <li class="fragment">Dropbox</li>
+                    <li class="fragment">BBC</li>
+                    <li class="fragment">MongoDB</li>
+                    <li class="fragment">Uber</li>
+                    <li class="fragment">...</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Co składa się na GO ?</h2>
+                <ul>
+                    <li class="fragment">Specyfikacja języka</li>
+                    <li class="fragment">Kompilator</li>
+                    <li class="fragment">Narzędzia</li>
+                    <li class="fragment">Ekosystem</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Czas na kod</h2>
+            </section>
+
+            <section>
+                <h2>Zalety ?</h2>
+                <ul>
+                    <li class="fragment">Całkiem prosta, skondensowana składnia</li>
+                    <li class="fragment">Silne typowanie</li>
+                    <li class="fragment">Czytelne komunikaty kompilatora</li>
+                    <li class="fragment">Szybka kompilacja</li>
+                    <li class="fragment">Wsparcie języka w operacjach równoległych</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Wady ?</h2>
+                <ul>
+                    <li class="fragment">Brak generyków</li>
+                    <li class="fragment">Jeszcze ciut brakuje do C++ jeśli chodzi o wydajność</li>
+                    <li class="fragment">Nietypowe podejścia (brak dziedziczenia, interfejsy)</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Plusy względem Rust</h2>
+                <ul>
+                    <li>Łatwiejszy język</li>
+                    <li>Większa społeczność</li>
+                    <li>Sam zarządza pamięcią</li>
+                    <li>Stabilniejszy rozwój</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Minusy względem Rust</h2>
+                <ul>
+                    <li>Wolniejszy</li>
+                    <li>Sam zarządza pamięcią</li>
+                    <li>Ciut mniejszy zakres funkcjonalności</li>
+                    <li>Bardziej 'nietypowy'</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>The End</h2>
+            </section>
+
+
+        </div>
+
+    </div>
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+
+    <script>
+        // Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+    </script>
+
+</body>
+
+</html>
